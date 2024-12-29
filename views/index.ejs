@@ -24,10 +24,10 @@
                 </span>
                 <span class="text-sm"><%= blog.createdAt.toISOString().split('T')[0] %></span>
               </div>
-              <h2 class="mb-3 text-2xl font-bold text-gray-900 dark:text-white"><a href="#" class="hover:text-blue-600 transition duration-300"><%= blog.title %></a></h2>
+              <h2 class="mb-3 text-2xl font-bold text-gray-900 "><a href="#" class="hover:text-blue-600 transition duration-300"><%= blog.title %></a></h2>
               <div class="flex items-center space-x-4">
                 <img class="w-8 h-8 rounded-full" src="<%= blog.createdBy.profilepic %>" alt="Author">
-                <span class="font-medium text-gray-700 dark:text-white"><%= blog.createdBy.fullname %></span>
+                <span class="font-medium text-gray-700 "><%= blog.createdBy.fullname %></span>
               </div>
               <div class="mt-4">
                 <a href="/blog/<%= blog._id %>" class="text-blue-600 dark:text-blue-500 hover:underline inline-flex items-center">
